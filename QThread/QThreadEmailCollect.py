@@ -22,7 +22,6 @@ class EmailCollect(QThread):
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 sock.settimeout(1)
                 result = sock.connect_ex((ip, port))
-                print(f"result:{result}")
                 if result == 0:
                     # 匹配邮箱地址
                     resp = sock.recv(1024)

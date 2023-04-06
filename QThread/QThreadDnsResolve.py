@@ -14,7 +14,6 @@ class DnsResolve(QThread):
         try:
             answers = dns.resolver.resolve(self.target, 'A')
             if not answers:
-                # self.result_dns_resolve.emit(f"未找到 {self.target} 的 DNS 记录", 1)
                 self.result_dns_resolve.emit(f"未找到相关信息", 1)
                 return
             for answer in answers:

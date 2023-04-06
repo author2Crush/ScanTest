@@ -27,7 +27,6 @@ class DirScan(QThread):
                 if href and href not in links:
                     links.append(href)
             if not links:
-                # self.result_dir_scan.emit(f"未找到 {self.target} 的目录", 1)
                 self.result_dir_scan.emit(f"未找到相关信息", 1)
                 return
             for link in links:

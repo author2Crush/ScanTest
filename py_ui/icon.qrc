@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>minimsize_pushbutton.png</file>
+    <file>close_pushbutton.png</file>
+  </qresource>
+</RCC>

@@ -22,7 +22,7 @@ class Ui_Form(object):
         self.label.setGeometry(QtCore.QRect(10, 10, 1200, 850))
         self.label.setMinimumSize(QtCore.QSize(1200, 850))
         self.label.setMaximumSize(QtCore.QSize(1200, 850))
-        self.label.setStyleSheet("background-color: rgba(16,30,41,240);\n"
+        self.label.setStyleSheet("background-color: rgba(255, 255, 255, 1.000);\n"
 "border-radius:10px\n"
 "")
         self.label.setText("")
@@ -81,7 +81,7 @@ class Ui_Form(object):
         self.close_button.setIcon(icon1)
         self.close_button.setObjectName("close_button")
         self.horizontalLayout_5.addWidget(self.close_button)
-        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3 = QtWidgets.QPushButton(Form)
         self.label_3.setGeometry(QtCore.QRect(550, 10, 81, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
@@ -89,7 +89,23 @@ class Ui_Form(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_3.setFont(font)
-        self.label_3.setStyleSheet("color:rgba(255,255,255,200)")
+        self.label_3.setStyleSheet(
+                "QPushButton#label_3{\n"
+                "    background-color:rgba(255, 255, 255, 1.000);\n"
+                "    border:1px solid rgba(255, 255, 255, 1.000);\n"
+                "    color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(102,102,153,1.000), stop:1 rgba(219,112,147,1.000));\n"
+                "}\n"
+                "QPushButton#label_3:hover{\n"
+                "    background-color:rgba(255, 255, 255, 1.000);\n"
+                "    border:1px solid rgba(255, 255, 255, 1.000);\n"
+                "    color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(102,102,153,1.000), stop:1 rgba(219,112,147,1.000));\n"
+                "}\n"
+                "QPushButton#label_3:pressed{\n"
+                "    background-color:rgba(255, 255, 255, 1.000);\n"
+                "    border:1px solid rgba(255, 255, 255, 1.000);\n"
+                "    color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(102,102,153,1.000), stop:1 rgba(219,112,147,1.000));\n"
+                "}\n"
+        )
         self.label_3.setObjectName("label_3")
         self.widget = QtWidgets.QWidget(Form)
         self.widget.setGeometry(QtCore.QRect(40, 70, 1141, 761))
@@ -102,15 +118,15 @@ class Ui_Form(object):
         self.label_2 = QtWidgets.QLabel(self.widget)
         self.label_2.setMinimumSize(QtCore.QSize(80, 25))
         self.label_2.setMaximumSize(QtCore.QSize(80, 25))
-        self.label_2.setStyleSheet("color:rgba(255,255,255,200)")
+        self.label_2.setStyleSheet("color:rgba(0,0,255,1.000)")
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
         self.lineEdit = QtWidgets.QLineEdit(self.widget)
         self.lineEdit.setStyleSheet("background-color:rgba(0,0,0,0);\n"
 "border:1px solid rgba(0,0,0,0);\n"
-"border-bottom-color:rgba(255,255,255,255);\n"
+"border-bottom-color:rgba(30,144,255,1.000);\n"
 "padding-bottom:7px;\n"
-"color:rgba(255,255,255,200)")
+"color:rgba(0,0,255,1.000)")
         self.lineEdit.setObjectName("lineEdit")
         self.horizontalLayout.addWidget(self.lineEdit)
         self.export_results_button = QtWidgets.QPushButton(self.widget)
@@ -319,17 +335,17 @@ class Ui_Form(object):
         self.textEdit.setMinimumSize(QtCore.QSize(1100, 680))
         self.textEdit.setMaximumSize(QtCore.QSize(1140, 680))
         self.textEdit.setStyleSheet("QTextEdit{\n"
-"background-color:rgba(0,0,0,0);\n"
+"background-color:rgba(242,242,242,1.000);\n"
 "border:1px solid rgba(0,0,0,0);\n"
-"border-bottom-color:rgba(255,255,255,255);\n"
+"border-bottom-color:rgba(135,206,250,1.000);\n"
 "padding-bottom:7px;\n"
-"border-top-color:ragb(255,255,255,255);\n"
+"border-top-color:ragb(135,206,250,1.000);\n"
 "padding-top:7px;\n"
-"border-left-color:ragb(255,255,255,255);\n"
+"border-left-color:ragb(135,206,250,1.000);\n"
 "padding-left:7px;\n"
-"border-right-color:ragb(255,255,255,255);\n"
+"border-right-color:ragb(135,206,250,1.000);\n"
 "padding-right:7px;\n"
-"color:rgba(255,255,255,200);\n"
+"color:rgba(30,144,255,1.000);\n"
 "border-radius:10px\n"
 "}")
         self.textEdit.setObjectName("textEdit")

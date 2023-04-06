@@ -116,9 +116,15 @@ class Ui_Form(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_2 = QtWidgets.QLabel(self.widget)
-        self.label_2.setMinimumSize(QtCore.QSize(80, 25))
-        self.label_2.setMaximumSize(QtCore.QSize(80, 25))
-        self.label_2.setStyleSheet("color:rgba(0,0,255,1.000)")
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(12)
+        # font.setBold(True)
+        # font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setMinimumSize(QtCore.QSize(100, 25))
+        self.label_2.setMaximumSize(QtCore.QSize(100, 25))
+        self.label_2.setStyleSheet("color:rgba(0,191,255,1.000)")
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
         self.lineEdit = QtWidgets.QLineEdit(self.widget)
@@ -133,7 +139,7 @@ class Ui_Form(object):
         self.export_results_button.setMinimumSize(QtCore.QSize(100, 25))
         self.export_results_button.setMaximumSize(QtCore.QSize(100, 25))
         self.export_results_button.setStyleSheet("QPushButton#export_results_button{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -158,7 +164,7 @@ class Ui_Form(object):
         self.button_1.setMinimumSize(QtCore.QSize(120, 25))
         self.button_1.setMaximumSize(QtCore.QSize(120, 25))
         self.button_1.setStyleSheet("QPushButton#button_1{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -180,7 +186,7 @@ class Ui_Form(object):
         self.button_2.setMinimumSize(QtCore.QSize(120, 25))
         self.button_2.setMaximumSize(QtCore.QSize(120, 25))
         self.button_2.setStyleSheet("QPushButton#button_2{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -202,7 +208,7 @@ class Ui_Form(object):
         self.button_3.setMinimumSize(QtCore.QSize(120, 25))
         self.button_3.setMaximumSize(QtCore.QSize(120, 25))
         self.button_3.setStyleSheet("QPushButton#button_3{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -224,7 +230,7 @@ class Ui_Form(object):
         self.button_4.setMinimumSize(QtCore.QSize(120, 25))
         self.button_4.setMaximumSize(QtCore.QSize(120, 25))
         self.button_4.setStyleSheet("QPushButton#button_4{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -246,7 +252,7 @@ class Ui_Form(object):
         self.button_5.setMinimumSize(QtCore.QSize(120, 25))
         self.button_5.setMaximumSize(QtCore.QSize(120, 25))
         self.button_5.setStyleSheet("QPushButton#button_5{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -268,7 +274,7 @@ class Ui_Form(object):
         self.button_6.setMinimumSize(QtCore.QSize(120, 25))
         self.button_6.setMaximumSize(QtCore.QSize(120, 25))
         self.button_6.setStyleSheet("QPushButton#button_6{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -290,7 +296,7 @@ class Ui_Form(object):
         self.button_7.setMinimumSize(QtCore.QSize(120, 25))
         self.button_7.setMaximumSize(QtCore.QSize(120, 25))
         self.button_7.setStyleSheet("QPushButton#button_7{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"
@@ -312,7 +318,7 @@ class Ui_Form(object):
         self.button_8.setMinimumSize(QtCore.QSize(120, 25))
         self.button_8.setMaximumSize(QtCore.QSize(120, 25))
         self.button_8.setStyleSheet("QPushButton#button_8{\n"
-"    background-color:rgba(2,62,118,255);\n"
+"    background-color:rgba(135,206,250,1.000);\n"
 "    color:rgba(255,255,255,200);\n"
 "    border-radius:5px;\n"
 "}\n"

@@ -18,7 +18,6 @@ from py_ui.tool_main import Ui_Form
 import utils.font_uitl as format
 
 
-
 class ShowUI(QWidget):
 
     def __init__(self, parent=None):
@@ -34,22 +33,6 @@ class ShowUI(QWidget):
         self.ui = Ui_Form()  # 创建UI对象
         self.ui.setupUi(self)  # 构建UI界面
         self.threads = []
-        # self.init_edit()
-
-
-    def init_edit(self):
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 1<<<---', '粉色'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 2<<<---', '黄色'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 3<<<---', '绿色'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 4<<<---', '橙色'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 5<<<---', '蓝绿'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 6<<<---', '红色'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 7<<<---', '蓝色'))
-        self.ui.textEdit.append(format.log_out_format(f'--->>>response 8<<<---', '茶色'))
-
-
-
-
 
     # =====================按钮=======================
     @pyqtSlot()
